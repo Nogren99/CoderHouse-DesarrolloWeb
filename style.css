@@ -293,7 +293,9 @@ footer{
     .reco>a>img:hover{
         width: 102%
     }
-
+    .reco>a>img:hover{
+        width: 102%;
+    }
 
 
     /*-----------------------Videos--------------------*/
