@@ -281,7 +281,6 @@ footer{
         flex-direction: column;
     }
     .reco a{
-        width: 70%;
         border-radius: 1%;
         display: flex;
         justify-content: center;
@@ -292,9 +291,6 @@ footer{
     }
     .reco>a>img:hover{
         width: 102%
-    }
-    .reco>a>img:hover{
-        width: 102%;
     }
 
 
