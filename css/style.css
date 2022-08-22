@@ -24,7 +24,7 @@ body{
 
 /*-----------------------nav---------------*/
 nav{
-    padding: 20px 10% 20px 10%;
+    padding: 20px 10% 20000px 20%;
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
@@ -255,6 +255,10 @@ footer{
     .logo{
         width: 3rem;
     }
+
+    .menu li a{
+        color: white;
+    }
     .menu li a:hover{
         color: darkorchid;
     }
@@ -288,9 +292,6 @@ footer{
     .reco>a>img{
         width: 100%;
         transition: height 2s;
-    }
-    .reco>a>img:hover{
-        width: 102%
     }
 
 
