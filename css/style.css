@@ -28,7 +28,6 @@ nav{
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    align-items: center;
     background-color: #3d3d3d;
 }
 .logo{
