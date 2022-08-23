@@ -86,26 +86,46 @@ footer {
   height: 100%; }
 
 /*----------------Posts-----------------*/
-.new h2 {
-  text-align: center;
-  margin: 20px; }
+.ultimas {
+  margin: 50px 15% 0px 15%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px; }
 
-.contenido {
-  display: flex;
-  justify-items: center; }
+.noticia1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 1px; }
 
-.post {
-  align-items: center; }
-  .post div {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    padding-bottom: 30px; }
-    .post div img {
-      width: 100%; }
-    .post div p {
-      margin: 3%;
-      font-weight: bolder; }
+.noticia2 {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 1px; }
+
+.noticia3 {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 1px; }
+
+.noticia4 {
+  grid-column: 1;
+  grid-row: 4; }
+
+.noticia5 {
+  grid-column: 1;
+  grid-row: 5; }
+
+.noticia6 {
+  grid-column: 1;
+  grid-row: 6; }
+
+.noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img {
+  width: 100%; }
+
+.noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p {
+  width: 100%;
+  font-weight: bolder; }
 
 @media only screen and (min-width: 768px) {
   /*-----------------------Videos--------------------*/
@@ -166,33 +186,49 @@ footer {
     width: 400px;
     height: 300px; }
   /*----------------Posts-----------------*/
-  .new {
-    margin: 5% auto;
-    width: 90%; }
-    .new h2 {
-      text-align: center;
-      margin: 20px; }
-  .contenido {
-    display: flex;
-    justify-items: center; }
-  .post {
-    padding: 15px;
-    margin-left: 1px;
-    margin-right: 5px;
-    align-items: center; }
-    .post div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "img _text";
-      justify-items: center;
-      padding-bottom: 30px; }
-      .post div img {
-        grid-area: img;
-        width: 300px; }
-      .post div p {
-        grid-area: _text;
-        font-weight: bolder; } }
+  .ultimas {
+    margin: 50px 15% 0px 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 70%;
+    align-items: start;
+    justify-items: start;
+    justify-content: center;
+    align-content: center;
+    padding: 20px; }
+  .noticia1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1px; }
+  .noticia2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1px; }
+  .noticia3 {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 1px; }
+  .noticia4 {
+    grid-column: 1;
+    grid-row: 2; }
+  .noticia5 {
+    grid-column: 2;
+    grid-row: 2; }
+  .noticia6 {
+    grid-column: 3;
+    grid-row: 2; }
+  .noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img {
+    width: 80%; }
+  .noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p {
+    width: 80%;
+    font-weight: bolder; }
+  .noticia1 h4, .noticia2 h4, .noticia3 h4, .noticia4 h4, .noticia5 h4, .noticia6 h4 {
+    width: 80%; }
+  .noticia1:hover, .noticia2:hover, .noticia3:hover, .noticia4:hover, .noticia5:hover, .noticia6:hover {
+    transition: all 0.7s ease;
+    opacity: 70%; } }
 
 /*********************************************************/
 /***********************NOVEDADES*************************/
@@ -226,51 +262,31 @@ footer {
   font-weight: bold;
   width: 100%; }
 
+.new h2 {
+  text-align: center;
+  margin: 20px; }
+
+.contenido {
+  display: flex;
+  justify-items: center; }
+
+.post {
+  align-items: center; }
+  .post div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-bottom: 30px; }
+    .post div img {
+      width: 100%; }
+    .post div p {
+      margin: 3%;
+      font-weight: bolder; }
+
 /*------------ultimas----------------*/
 .novedades h2 {
   margin-top: 10px;
   text-align: center; }
-
-.ultimas {
-  margin: 50px 15% 0px 15%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  gap: 10px; }
-
-.noticia1 {
-  grid-column: 1;
-  grid-row: 1;
-  margin: 1px; }
-
-.noticia2 {
-  grid-column: 1;
-  grid-row: 2;
-  margin: 1px; }
-
-.noticia3 {
-  grid-column: 1;
-  grid-row: 3;
-  margin: 1px; }
-
-.noticia4 {
-  grid-column: 1;
-  grid-row: 4; }
-
-.noticia5 {
-  grid-column: 1;
-  grid-row: 5; }
-
-.noticia6 {
-  grid-column: 1;
-  grid-row: 6; }
-
-.noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img {
-  width: 100%; }
-
-.noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p {
-  width: 100%;
-  font-weight: bolder; }
 
 @media only screen and (min-width: 768px) {
   .destacadas {
@@ -318,7 +334,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   .destacadas {
-    margin: 50px 10% 0px 10%;
+    margin: 4rem 10% 0px 10%;
     width: 80%; }
   /*------------ultimas----------------*/
   .card img {
@@ -331,44 +347,32 @@ footer {
     height: 2px;
     padding: 0;
     margin: 4rem 15% 4rem 15%; }
-  .ultimas {
-    margin: 50px 15% 0px 15%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    width: 70%;
-    align-items: start;
-    justify-items: start;
-    justify-content: center;
-    align-content: center;
-    padding: 20px; }
-  .noticia1 {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 1px; }
-  .noticia2 {
-    grid-column: 2;
-    grid-row: 1;
-    margin: 1px; }
-  .noticia3 {
-    grid-column: 3;
-    grid-row: 1;
-    margin: 1px; }
-  .noticia4 {
-    grid-column: 1;
-    grid-row: 2; }
-  .noticia5 {
-    grid-column: 2;
-    grid-row: 2; }
-  .noticia6 {
-    grid-column: 3;
-    grid-row: 2; }
-  .noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img, .noticia5 img, .noticia6 img {
-    width: 80%; }
-  .noticia1 p, .noticia2 p, .noticia3 p, .noticia4 p, .noticia5 p, .noticia6 p {
-    width: 80%;
-    font-weight: bolder; } }
+  .new {
+    margin: 5% auto;
+    width: 90%; }
+    .new h2 {
+      text-align: center;
+      margin: 20px; }
+  .contenido {
+    margin-top: 4rem;
+    display: flex;
+    justify-items: center; }
+  .post {
+    align-items: center; }
+    .post div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "a img _text ";
+      justify-items: center;
+      padding-bottom: 30px; }
+      .post div img {
+        grid-area: img;
+        width: 300px;
+        align-items: flex-end; }
+      .post div p {
+        grid-area: _text;
+        font-weight: bolder; } }
 
 /*********************************************************/
 /**********************FirstSteps*************************/
