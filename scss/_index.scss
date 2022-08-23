@@ -1,0 +1,240 @@
+/*-------------------------Reco---------------------*/
+
+.reco{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        align-items:flex-start;
+        padding-bottom: 25px;
+    }
+    a{
+        img{
+            width: 100%;
+        }
+        
+    }
+}
+
+/*-----------------------Videos--------------------*/
+
+
+.videosSection{
+    padding-top: 25px;
+    background-color: #1a1919;
+    padding-bottom: 25px;
+    h2{
+        text-align: center;
+        color: white;
+    }
+}
+.videos{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: relative;
+}
+.principal{
+    iframe{
+        position: absolute;
+        width: 100%; 
+        height: 100%;
+    }
+}
+.sec1,.sec2{
+    iframe{
+        width: 100%; 
+	    height: 100%;
+    }
+}
+
+/*----------------Posts-----------------*/
+
+.new{
+    h2{
+        text-align: center;
+        margin: 20px;
+    }
+    
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "post""publi";
+    justify-items: center;   
+}
+.post{
+    grid-area: post;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding-bottom: 30px;
+        img{
+            width: 100%;
+        }
+        p{
+            margin: 3%;
+            font-weight:bolder;
+        }
+    }
+}
+.publi{
+    grid-area: publi;
+    align-items: center;
+}
+
+
+@media only screen and (min-width:768px){
+
+    /*-----------------------Videos--------------------*/
+
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal{
+        iframe{
+            position: absolute;
+            width: 100%; 
+            height: 100%;
+        }
+
+    }
+    .sec1,.sec2{
+        iframe{
+            width: 100%; 
+            height: 100%;
+        }
+        
+    }
+
+    /*----------------Posts-----------------*/
+
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "post""publi";
+    }
+    .post{
+        grid-area: post;
+    }
+    .post{
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+            grid-template-areas: "img text text";
+            justify-items: center;
+            padding-bottom: 30px;
+            img{
+                grid-area: img;
+            }
+            p{
+                margin-left: 15px;
+            grid-area: text;
+            font-weight:bolder;
+            }
+        }
+        
+    }
+
+}
+
+@media only screen and (min-width:1024px){
+
+
+
+
+    /*-----------------------Videos--------------------*/
+
+
+    .videos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:10px;
+        grid-template-areas: 
+        "principal secundario1"
+        "principal secundario2"
+        ;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items:center;
+    }
+    .principal{
+        grid-area: principal;
+        iframe{
+            position:relative;
+            height: 400px;
+            width: 700px;
+        }
+    }
+    .sec1{
+        grid-area: secundario1;
+    }
+    .sec2{
+        grid-area: secundario2;
+    }
+    .sec1,.sec2{
+        iframe{
+            width: 400px;
+            height:300px;
+        }
+        
+    }
+
+    /*----------------Posts-----------------*/
+    .new{
+        margin:5% auto;
+        width: 90%;
+        h2{
+            text-align: center;
+            margin: 20px;
+        }
+    }
+
+
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "post post post publi";
+        justify-items: center;
+    }
+    .post{
+        grid-area: post;
+        padding: 15px;
+        margin-left: 1px;
+        border: 2px solid darkorchid ;
+        margin-right: 5px;
+        align-items: center;
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+            grid-template-areas: "img text text";
+            justify-items: center;
+            padding-bottom: 30px;
+            img{
+                grid-area: img;
+                width: 300px;
+            }
+            p{
+                margin-left: 15px;
+                grid-area: text;
+                font-weight:bolder;
+            }
+        }
+    }
+    .publi{
+        border: 1px solid rgb(9, 42, 255) ;
+        grid-area: publi;
+    }
+}

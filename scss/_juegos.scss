@@ -1,4 +1,20 @@
 
+.carrusel{
+    margin:5% 0% 5% 0%;
+    img{
+        width: 100%;
+    }
+}
+
+.juego{
+    img{
+        width: 100%;
+    }
+    p{
+        margin: 1%;
+    } 
+}
+
 @media only screen and (min-width:768px){
     .carrusel{
         margin:5% 15% 5% 15%;
@@ -15,10 +31,10 @@
         display: flex;
         flex-direction: row;
         justify-items: center;
-        .img{
+        img{
             width: 40%;
         }
-        .p{
+        p{
             margin-left: 5%;
         font-weight: bolder;
         }

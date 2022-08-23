@@ -1,3 +1,8 @@
 $main-color:#898c8e;
-@import "juegosDesktop";
-@import "juegosMobile";
+@import "_common";
+@import "_index";
+@import "_novedades.scss";
+@import "_firstSteps";
+@import "_juegos";
+@import "_videos";
+@import "headsets.scss"
