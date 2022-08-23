@@ -61,14 +61,10 @@
     
 }
 .contenido{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "post""publi";
+    display: flex;
     justify-items: center;   
 }
 .post{
-    grid-area: post;
     align-items: center;
     div{
         display: flex;
@@ -83,10 +79,6 @@
             font-weight:bolder;
         }
     }
-}
-.publi{
-    grid-area: publi;
-    align-items: center;
 }
 
 
@@ -202,24 +194,19 @@
 
 
     .contenido{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "post post post publi";
+        display: flex;
         justify-items: center;
     }
     .post{
-        grid-area: post;
         padding: 15px;
         margin-left: 1px;
-        border: 2px solid darkorchid ;
         margin-right: 5px;
         align-items: center;
         div{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr ;
             grid-template-rows: 1fr;
-            grid-template-areas: "img text text";
+            grid-template-areas: "img _text";
             justify-items: center;
             padding-bottom: 30px;
             img{
@@ -227,14 +214,9 @@
                 width: 300px;
             }
             p{
-                margin-left: 15px;
-                grid-area: text;
+                grid-area: _text;
                 font-weight:bolder;
             }
         }
-    }
-    .publi{
-        border: 1px solid rgb(9, 42, 255) ;
-        grid-area: publi;
     }
 }

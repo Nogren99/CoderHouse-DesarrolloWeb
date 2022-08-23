@@ -4,79 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./assets/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+
     <title>Experiencias VR</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img src="./assets/pngwing.com.png" alt="Logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./novedades.html">Novedades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./videos.html">Videos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./juegos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Juegos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./top.html">Top 5</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="./last.html">Ultimos Lanzamientos</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="./headsets.html">Headsets</a>
-                  </li>
-                  <li>
-                    <a class="nav-link " href="./firststeps.html">Fist Steps</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img
+            src="./assets/pngwing.com.png"
+            alt="Logo"
+            class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./novedades.html"
+                >Novedades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./juegos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Juegos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./top.html"
+                    >Top 5</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./last.html"
+                    >Ultimos Lanzamientos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./headsets.html"
+                >Headsets</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="./firststeps.html"
+                >Fist Steps</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="lista">
-            <dev class="headset1">
-                <img src="" alt="">
-                <p></p>
-            </dev>
-            <dev class="headset2">
-                <img src="" alt="">
-                <p></p>
-            </dev>
-            <dev class="headset3">
-                <img src="" alt="">
-                <p></p>
-            </dev>
-            <dev class="headset4">
-                <img src="" alt="">
-                <p></p>
-            </dev>
-            <dev class="headset5">
-                <img src="" alt="">
-                <p></p>
-            </dev>
-        </section>
-    </main>
+  <main>
+    <div class="container">
+      <div class="row">
+        <img class="col-xs-12 col-lg-6 p-3" src="./assets/jeugo4.jpg" alt="" />
+        <p class="col-xs-12 col-lg-6 p-3">
+          Join our growing community as you explore, play, and
+          help craft the future of social VR. Create worlds and
+          custom avatars. Welcome to VRChat.
+        </p>
 
+        <img class="col-xs-12 col-lg-6 p-3" src="./assets/phasmo.jpg" alt="" />
+        <p class="col-xs-12 col-lg-6 p-3">
+          Phasmophobia is a 4 player online co-op psychological
+          horror. Paranormal activity is on the rise and it’s up
+          to you and your team to use all the ghost hunting
+          equipment at your disposal in order to gather as much
+          evidence as you can.
+        </p>
 
-    
+        <img
+          class="col-xs-12 col-lg-6 p-3"
+          src="./assets/No-Mans-Sky-21-4032348688.jpg"
+          alt=""
+        />
+        <p class="col-xs-12 col-lg-6 p-3">
+          No Man's Sky is a game about exploration and survival in
+          an infinite procedurally generated universe.
+        </p>
+
+        <img class="col-xs-12 col-lg-6 p-3" src="./assets/recroom.jpg" alt="" />
+        <p class="col-xs-12 col-lg-6 p-3">
+          Rec Room is the best place to build and play games
+          together. Party up with friends from all around the
+          world to chat, hang out, explore MILLIONS of
+          player-created rooms, or build something new and amazing
+          to share with us all.
+        </p>
+
+        <img class="col-xs-12 col-lg-6 p-3" src="./assets/jeugo2.jpg" alt="" />
+        <p class="col-xs-12 col-lg-6 p-3">
+          Beat Saber is a VR rhythm game where you slash the beats
+          of adrenaline-pumping music as they fly towards you,
+          surrounded by a futuristic world.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/bootstrap.js"></script>
 </body>
 </html>

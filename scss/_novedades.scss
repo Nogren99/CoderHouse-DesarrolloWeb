@@ -157,7 +157,6 @@
         }
         p{
             font-weight: bold;
-            width: 50%;
         }
         
     }
@@ -174,12 +173,21 @@
     
     /*------------ultimas----------------*/
     
-    .novedades{
-        h2{
-            margin-top: 100px;
+    .card{
+        img{
+            width: 100%;
         }
-        
+        p{
+            margin: 0;
+            padding: 0;
+        }
     }
+    .linea {
+        border-top: 1px solid black;
+        height: 2px;
+        padding: 0;
+        margin: 4rem 15% 4rem 15%;
+      }
     .ultimas{
         margin:50px 15% 0px 15%;
         display: grid;
@@ -193,8 +201,6 @@
         justify-content: center;
         align-content: center;
         padding: 20px;
-        border: darkorchid 2px solid;
-        border-radius: 1%;
     }
     
     .noticia1{
