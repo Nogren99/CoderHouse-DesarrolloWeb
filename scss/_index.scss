@@ -1,22 +1,6 @@
 /*-------------------------Reco---------------------*/
 
-.reco{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1{
-        align-items:flex-start;
-        padding-bottom: 25px;
-    }
-    a{
-        img{
-            width: 100%;
-        }
-        
-    }
-}
+
 .welcome{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -39,46 +23,39 @@
     a{
         text-decoration: none;
         background: darkorchid;
-        padding: 14px 40px;
+        padding: 1rem 4rem;
         display:inline-block;
         color: #fff;
         font-size: 18px;
-        margin-top: 30px;
+        margin-top: 2rem;
         border-radius: 30px;
     }
 }
 /*-----------------------Videos--------------------*/
 
-
-.videosSection{
-    padding-top: 25px;
+.reco{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #1a1919;
-    padding-bottom: 25px;
-    h2{
-        text-align: center;
-        color: white;
-    }
-}
-.videos{
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap:10px;
-    position: relative;
-}
-.principal{
-    iframe{
-        position: absolute;
-        width: 100%; 
-        height: 100%;
+    align-items: center;
+
+    h2{
+        align-items:flex-start;
+        padding-bottom: 2rem;
+        color: white;
+    }
+    a{
+        img{
+            width: 100%;
+        }
+        
     }
 }
-.sec1,.sec2{
-    iframe{
-        width: 100%; 
-	    height: 100%;
-    }
-}
+
 
 /*----------------Posts-----------------*/
 .ultimas{
@@ -134,28 +111,6 @@
 
 @media only screen and (min-width:768px){
 
-    /*-----------------------Videos--------------------*/
-
-    .videos{
-        display: flex;
-        flex-direction: column;
-    }
-    .principal{
-        iframe{
-            position: absolute;
-            width: 100%; 
-            height: 100%;
-        }
-
-    }
-    .sec1,.sec2{
-        iframe{
-            width: 100%; 
-            height: 100%;
-        }
-        
-    }
-
     /*----------------Posts-----------------*/
 
     .contenido{
@@ -191,47 +146,6 @@
 
 @media only screen and (min-width:1024px){
 
-
-
-
-    /*-----------------------Videos--------------------*/
-
-
-    .videos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap:10px;
-        grid-template-areas: 
-        "principal secundario1"
-        "principal secundario2"
-        ;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-items:center;
-    }
-    .principal{
-        grid-area: principal;
-        iframe{
-            position:relative;
-            height: 400px;
-            width: 700px;
-        }
-    }
-    .sec1{
-        grid-area: secundario1;
-    }
-    .sec2{
-        grid-area: secundario2;
-    }
-    .sec1,.sec2{
-        iframe{
-            width: 400px;
-            height:300px;
-        }
-        
-    }
-
     /*----------------Posts-----------------*/
     .ultimas{
         margin:50px 15% 0px 15%;
@@ -248,20 +162,21 @@
         padding: 20px;
     }
     
-    .noticia1{
-        grid-column: 1;
+    .row_1{
         grid-row: 1;
         margin: 1px;
+    }
+    .noticia1{
+        @extend .row_1;
+        grid-column: 1;
     }
     .noticia2{
+        @extend .row_1;
         grid-column: 2;
-        grid-row: 1;
-        margin: 1px;
     }
     .noticia3{
+        @extend .row_1;
         grid-column: 3;
-        grid-row: 1;
-        margin: 1px;
     }
     .noticia4{
         grid-column: 1;

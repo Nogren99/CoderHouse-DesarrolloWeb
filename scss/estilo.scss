@@ -1,4 +1,9 @@
 $main-color:#898c8e;
+$secondary-color: #3d3d3d;
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ } 
 @import "_common";
 @import "_index";
 @import "_novedades.scss";
