@@ -17,16 +17,15 @@ body {
 
 /*-----------------------nav---------------*/
 nav {
-  padding: 20px 10% 20px 20%;
+  padding: 20% 10% 20% 20%;
   font-family: 'Open Sans', sans-serif;
   background-color: #3d3d3d; }
 
 .logo {
+  margin-left: 2rem;
   width: 5rem; }
 
 .menu li {
-  display: inline-block;
-  position: relative;
   padding: 10px;
   border-radius: 10%;
   margin: 10px; }
@@ -39,6 +38,15 @@ nav {
       color: darkorchid; }
     .menu li a:hover {
       color: darkorchid; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    margin-right: 2rem;
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end; } }
 
 /*------------footer-----------------*/
 footer {
@@ -59,6 +67,33 @@ footer {
     padding-bottom: 25px; }
   .reco a img {
     width: 100%; }
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr; }
+  .welcome img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    margin: 10rem 0px 3rem 2rem; }
+
+.text-container {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 30% 20% 20% 30%; }
+  .text-container h1 {
+    font-size: 5rem;
+    font-weight: 400; }
+  .text-container a {
+    text-decoration: none;
+    background: darkorchid;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px; }
 
 /*-----------------------Videos--------------------*/
 .videosSection {

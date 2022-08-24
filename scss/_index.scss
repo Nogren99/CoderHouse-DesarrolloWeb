@@ -17,7 +17,36 @@
         
     }
 }
-
+.welcome{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    img{
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        margin: 10rem 0px 3rem 2rem;
+    }
+}
+.text-container{
+    grid-column: 2;
+    grid-row: 1;
+    margin:30% 20% 20% 30%;
+    h1{
+        font-size: 5rem;
+        font-weight: 400;
+    }
+    a{
+        text-decoration: none;
+        background: darkorchid;
+        padding: 14px 40px;
+        display:inline-block;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+}
 /*-----------------------Videos--------------------*/
 
 
