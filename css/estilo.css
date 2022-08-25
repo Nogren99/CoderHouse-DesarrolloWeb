@@ -50,26 +50,32 @@ nav {
 
 /*------------footer-----------------*/
 footer {
-  margin-top: 50px;
-  padding: 20px 20px 20px 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   background-color: #3d3d3d;
   color: white; }
+  footer a {
+    margin: 0.5rem; }
+    footer a img {
+      margin: 1rem;
+      width: 100%; }
 
 /*-------------------------Reco---------------------*/
 .welcome {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr; }
   .welcome img {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    margin: 10rem 0px 3rem 2rem; }
+    display: none; }
 
 .text-container {
-  grid-column: 2;
-  grid-row: 1;
-  margin: 30% 20% 20% 30%; }
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1; }
   .text-container h1 {
     font-size: 5rem;
     font-weight: 400; }
@@ -78,10 +84,14 @@ footer {
     background: darkorchid;
     padding: 1rem 4rem;
     display: inline-block;
-    color: #fff;
+    color: white;
     font-size: 18px;
     margin-top: 2rem;
     border-radius: 30px; }
+    .text-container a:hover {
+      color: darkorchid;
+      font-weight: bold;
+      background: white; }
 
 /*-----------------------Videos--------------------*/
 .reco {
@@ -97,8 +107,6 @@ footer {
     align-items: flex-start;
     padding-bottom: 2rem;
     color: white; }
-  .reco a img {
-    width: 100%; }
 
 /*----------------Posts-----------------*/
 .ultimas {
@@ -143,27 +151,21 @@ footer {
   font-weight: bolder; }
 
 @media only screen and (min-width: 768px) {
-  /*----------------Posts-----------------*/
-  .contenido {
+  .welcome {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "post" "publi"; }
-  .post {
-    grid-area: post; }
-  .post div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "img text text";
-    justify-items: center;
-    padding-bottom: 30px; }
-    .post div img {
-      grid-area: img; }
-    .post div p {
-      margin-left: 15px;
-      grid-area: text;
-      font-weight: bolder; } }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; }
+    .welcome img {
+      display: flex;
+      grid-column: 1;
+      grid-row: 1;
+      width: 100%;
+      margin: 10rem 0px 3rem 2rem; }
+  .text-container {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 30% 20% 20% 30%; } }
 
 @media only screen and (min-width: 1024px) {
   /*----------------Posts-----------------*/
@@ -498,8 +500,7 @@ footer {
 @media only screen and (min-width: 1024px) {
   .videosSectionn {
     border: darkorchid 2px solid;
-    background-color: #5a5a5a;
-    border-radius: 1%; } }
+    background-color: #5a5a5a; } }
 
 /*********************************************************/
 /**************************Headsets*************************/

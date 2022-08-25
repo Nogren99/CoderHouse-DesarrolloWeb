@@ -3,19 +3,17 @@
 
 .welcome{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    
     img{
-        grid-column: 1;
-        grid-row: 1;
-        width: 100%;
-        margin: 10rem 0px 3rem 2rem;
+        display: none;
     }
 }
 .text-container{
-    grid-column: 2;
+    text-align: center;
+    grid-column: 1;
     grid-row: 1;
-    margin:30% 20% 20% 30%;
     h1{
         font-size: 5rem;
         font-weight: 400;
@@ -25,10 +23,15 @@
         background: darkorchid;
         padding: 1rem 4rem;
         display:inline-block;
-        color: #fff;
+        color: white;
         font-size: 18px;
         margin-top: 2rem;
         border-radius: 30px;
+        &:hover{
+            color: darkorchid;
+            font-weight: bold;
+            background:white;
+        }
     }
 }
 /*-----------------------Videos--------------------*/
@@ -47,12 +50,6 @@
         align-items:flex-start;
         padding-bottom: 2rem;
         color: white;
-    }
-    a{
-        img{
-            width: 100%;
-        }
-        
     }
 }
 
@@ -110,39 +107,26 @@
 
 
 @media only screen and (min-width:768px){
-
-    /*----------------Posts-----------------*/
-
-    .contenido{
+    .welcome{
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "post""publi";
-    }
-    .post{
-        grid-area: post;
-    }
-    .post{
-        div{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
-            grid-template-rows: 1fr;
-            grid-template-areas: "img text text";
-            justify-items: center;
-            padding-bottom: 30px;
-            img{
-                grid-area: img;
-            }
-            p{
-                margin-left: 15px;
-            grid-area: text;
-            font-weight:bolder;
-            }
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        img{
+            display:flex;
+            grid-column: 1;
+            grid-row: 1;
+            width: 100%;
+            margin: 10rem 0px 3rem 2rem;
         }
-        
     }
-
+    .text-container{
+        text-align: left;
+        grid-column: 2;
+        grid-row: 1;
+        margin:30% 20% 20% 30%;
+    }
 }
+
 
 @media only screen and (min-width:1024px){
 
