@@ -81,12 +81,13 @@ footer {
     font-weight: 400; }
   .text-container .btnowo {
     text-decoration: none;
-    background: darkorchid;
     padding: 1rem 4rem;
     display: inline-block;
-    color: white;
     font-size: 18px;
-    border-radius: 30px; }
+    border-radius: 30px;
+    background: darkorchid;
+    border-color: darkorchid;
+    color: white; }
     .text-container .btnowo:hover {
       color: darkorchid;
       background: white; }
