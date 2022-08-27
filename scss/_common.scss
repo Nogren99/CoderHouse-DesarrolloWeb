@@ -19,22 +19,16 @@ body{
 
 /*-----------------------nav---------------*/
 nav{
-    padding: 20% 10% 20% 20%;
     font-family: 'Open Sans', sans-serif;
     background-color:$secondary-color;
-    
-    
 }
 .logo{
     margin-left: 2rem;
     width: 5rem;
 }
 .menu{
-   
     li{
-        padding: 10px;
-        border-radius: 10%;
-        margin: 10px;
+        padding: 1rem;
         a{
             text-decoration: none;
             font-weight: bold;
@@ -48,11 +42,15 @@ nav{
             }
         }
     }
-  
 }
 @media (min-width: 992px){
+    a{
+        padding-left:5%;
+    }
+    ul{
+        padding-right: 5%;
+    }
     .navbar-expand-lg .navbar-collapse {
-        margin-right: 2rem;
         display: flex;
         flex-basis: auto;
         flex-wrap: wrap;

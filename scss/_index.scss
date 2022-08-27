@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    
     img{
         display: none;
     }
@@ -14,6 +13,7 @@
     text-align: center;
     grid-column: 1;
     grid-row: 1;
+    
     h1{
         font-size: 5rem;
         font-weight: 400;
@@ -34,7 +34,7 @@
         }
     }
 }
-/*-----------------------Videos--------------------*/
+/*-----------------------carru--------------------*/
 
 .reco{
     margin-top: 2rem;
@@ -61,6 +61,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
     gap: 10px;
+    a{
+        text-decoration: none;
+        
+        h4{
+            color: $darker-color;
+        }
+        p{
+            color:$darker-color;
+        }
+    }
 }
 
 .noticia1{
@@ -100,6 +110,7 @@
     p{
         width: 100%;
         font-weight:bolder;
+        
     }
     
 }
@@ -176,14 +187,14 @@
     }
     .noticia1,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
         img{
-            width: 80%
+            width: 90%
         }
         p{
-            width: 80%;
+            width: 90%;
             font-weight:bolder;
         }
         h4{
-            width: 80%;
+            width: 90%;
         }
         &:hover{
             transition: all 0.7s ease;

@@ -1,5 +1,7 @@
 $main-color:#898c8e;
 $secondary-color: #3d3d3d;
+$darker-color:#1a1919;
+
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
