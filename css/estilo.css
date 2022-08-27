@@ -79,19 +79,25 @@ footer {
   .text-container h1 {
     font-size: 5rem;
     font-weight: 400; }
-  .text-container a {
+  .text-container .btnowo {
     text-decoration: none;
     background: darkorchid;
     padding: 1rem 4rem;
     display: inline-block;
     color: white;
     font-size: 18px;
-    margin-top: 2rem;
     border-radius: 30px; }
-    .text-container a:hover {
+    .text-container .btnowo:hover {
       color: darkorchid;
-      font-weight: bold;
       background: white; }
+  .text-container .modal-content {
+    background-color: #898c8e; }
+  .text-container .modal-footer .btn {
+    border-radius: 30px;
+    color: #1a1919; }
+    .text-container .modal-footer .btn:hover {
+      color: darkorchid;
+      background: #898c8e; }
 
 /*-----------------------carru--------------------*/
 .reco {

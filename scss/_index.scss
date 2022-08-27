@@ -18,19 +18,31 @@
         font-size: 5rem;
         font-weight: 400;
     }
-    a{
+    .btnowo{
         text-decoration: none;
         background: darkorchid;
         padding: 1rem 4rem;
         display:inline-block;
         color: white;
         font-size: 18px;
-        margin-top: 2rem;
         border-radius: 30px;
         &:hover{
             color: darkorchid;
-            font-weight: bold;
             background:white;
+            
+        }
+    }
+    .modal-content{
+        background-color: $main-color;
+    }
+    .modal-footer{
+        .btn{
+            border-radius: 30px;
+            color:$darker-color;
+            &:hover{
+                color: darkorchid;
+                background:$main-color;
+            }
         }
     }
 }
