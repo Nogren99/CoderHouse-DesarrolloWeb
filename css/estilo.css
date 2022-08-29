@@ -66,16 +66,13 @@ footer {
 
 /*-------------------------Reco---------------------*/
 .welcome {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; }
+  display: flex;
+  flex-direction: column; }
   .welcome img {
-    display: none; }
+    margin: 2%; }
 
 .text-container {
-  text-align: center;
-  grid-column: 1;
-  grid-row: 1; }
+  text-align: center; }
   .text-container h1 {
     font-size: 5rem;
     font-weight: 400; }
@@ -110,10 +107,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .reco h2 {
-    align-items: flex-start;
-    padding-bottom: 2rem;
-    color: white; }
+  .reco h5 {
+    color: darkorchid; }
+  .reco p {
+    color: darkorchid; }
+  .reco .carousel-indicators .button {
+    color: black; }
 
 /*----------------Posts-----------------*/
 .ultimas {
@@ -172,8 +171,8 @@ footer {
       display: flex;
       grid-column: 1;
       grid-row: 1;
-      width: 100%;
-      margin: 10rem 0px 3rem 2rem; }
+      width: 90%;
+      margin: 12rem 0px 3rem 5rem; }
   .text-container {
     text-align: left;
     grid-column: 2;
@@ -181,6 +180,8 @@ footer {
     margin: 30% 20% 20% 30%; } }
 
 @media only screen and (min-width: 1024px) {
+  .welcome img {
+    margin: 10rem 0px 3rem 10rem; }
   /*----------------Posts-----------------*/
   .ultimas {
     margin: 50px 15% 0px 15%;
