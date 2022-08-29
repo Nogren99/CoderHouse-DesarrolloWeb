@@ -15,24 +15,12 @@
         margin: 1%;
     }
 }
-.h1head{
-    text-align: center;
-    margin:5%
-}
-
-
 
 @media only screen and (min-width:768px){
-    .h1head{
-        text-align: center;
-        margin: 1% 0% 0% 1%;
-    }
     .lista{
-        margin:2% 0% 0px 0%;
+        margin: 5% 15% 0% 15%;
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        align-items: center;
     }
     
     .headset{
@@ -40,7 +28,7 @@
             margin: 1%;
         }
         p{
-            margin: 1%;
+            margin: 1% 0% 1% 0%;
         }
         ul{
             margin-left: 5%;
@@ -51,32 +39,4 @@
         }
     }
 }
-
-@media only screen and (min-width:1024px){
-    .h1head{
-        text-align: center;
-        margin:3%
-    }
-    .lista{
-        margin:50px 15% 0px 15%;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .headset{
-        h2{
-            margin: 1% 0% 1% 0%;
-        }
-        p{
-            margin: 1% 0% 1% 0%;
-        }
-        ul{
-            margin-left: 2%;
-        }
-    }
-}
-
-
 

@@ -4,6 +4,10 @@
         h1{
             margin:2%0%2%0%;
         }
+        &:hover{
+            transition: all 0.7s ease;
+            opacity: 70% ;
+        }
     }
     .ultimosJuegos{
         margin:5% 15% 5% 15%;
