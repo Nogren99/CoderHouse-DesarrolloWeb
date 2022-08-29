@@ -6,6 +6,7 @@
     flex-direction: column;
     img{
         margin:2%;
+        height:auto ;
     }
 }
 .text-container{
@@ -60,11 +61,6 @@
     }
     p{
         color: darkorchid;
-    }
-    .carousel-indicators{
-        .button{
-            color: black;
-        }
     }
 }
 

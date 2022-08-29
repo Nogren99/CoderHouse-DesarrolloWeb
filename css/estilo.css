@@ -69,7 +69,8 @@ footer {
   display: flex;
   flex-direction: column; }
   .welcome img {
-    margin: 2%; }
+    margin: 2%;
+    height: auto; }
 
 .text-container {
   text-align: center; }
@@ -111,8 +112,6 @@ footer {
     color: darkorchid; }
   .reco p {
     color: darkorchid; }
-  .reco .carousel-indicators .button {
-    color: black; }
 
 /*----------------Posts-----------------*/
 .ultimas {
@@ -396,6 +395,11 @@ footer {
       margin: 1% 0% 1% 0%; }
     .first h2 {
       margin: 1% 0% 1% 0%; } }
+
+.ultimosJuegos {
+  margin-top: 2%; }
+  .ultimosJuegos img {
+    width: 100%; }
 
 @media only screen and (min-width: 768px) {
   .carrusel {
