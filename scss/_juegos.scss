@@ -1,51 +1,41 @@
-
-.carrusel{
-    margin:5% 0% 5% 0%;
-    img{
-        width: 100%;
-    }
-}
-
-.juego{
-    img{
-        width: 100%;
-    }
-    p{
-        margin: 1%;
-    } 
-}
-
 @media only screen and (min-width:768px){
     .carrusel{
         margin:5% 15% 5% 15%;
+        h1{
+            margin:2%0%2%0%;
+        }
     }
     .ultimosJuegos{
         margin:5% 15% 5% 15%;
         display: grid;
         grid-template-rows: 3;
         gap:10;
+        .juego{
+            margin:5% 0% 5% 0%;
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            img{
+                width: 40%;
+            }
+            h2{
+                margin-left: 5%;
+            }
+            p{
+                margin-left: 5%;
+                font-weight: bolder;
+            }
+        }
+        .uno{
+            grid-row: 1;
+        }
+        .dos{
+            grid-row: 2;
+        }
+        .tres{
+            grid-row: 3;
+        }
     }
 
-    .juego{
-        margin:5% 0% 5% 0%;
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        img{
-            width: 40%;
-        }
-        p{
-            margin-left: 5%;
-        font-weight: bolder;
-        }
-    }
-    .uno{
-        grid-row: 1;
-    }
-    .dos{
-        grid-row: 2;
-    }
-    .tres{
-        grid-row: 3;
-    }
+    
 }

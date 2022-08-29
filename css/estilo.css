@@ -117,7 +117,7 @@ footer {
 
 /*----------------Posts-----------------*/
 .ultimas {
-  margin: 50px 15% 0px 15%;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -382,6 +382,9 @@ footer {
 .first img {
   width: 100%; }
 
+.first a {
+  padding-left: 0%; }
+
 @media only screen and (min-width: 768px) {
   .first img {
     margin-left: 1%;
@@ -400,79 +403,47 @@ footer {
     .first h2 {
       margin: 1% 0% 1% 0%; } }
 
-.carrusel {
-  margin: 5% 0% 5% 0%; }
-  .carrusel img {
-    width: 100%; }
-
-.juego img {
-  width: 100%; }
-
-.juego p {
-  margin: 1%; }
-
 @media only screen and (min-width: 768px) {
   .carrusel {
     margin: 5% 15% 5% 15%; }
+    .carrusel h1 {
+      margin: 2% 0% 2% 0%; }
   .ultimosJuegos {
     margin: 5% 15% 5% 15%;
     display: grid;
     grid-template-rows: 3;
     gap: 10; }
-  .juego {
-    margin: 5% 0% 5% 0%;
-    display: flex;
-    flex-direction: row;
-    justify-items: center; }
-    .juego img {
-      width: 40%; }
-    .juego p {
-      margin-left: 5%;
-      font-weight: bolder; }
-  .uno {
-    grid-row: 1; }
-  .dos {
-    grid-row: 2; }
-  .tres {
-    grid-row: 3; } }
+    .ultimosJuegos .juego {
+      margin: 5% 0% 5% 0%;
+      display: flex;
+      flex-direction: row;
+      justify-items: center; }
+      .ultimosJuegos .juego img {
+        width: 40%; }
+      .ultimosJuegos .juego h2 {
+        margin-left: 5%; }
+      .ultimosJuegos .juego p {
+        margin-left: 5%;
+        font-weight: bolder; }
+    .ultimosJuegos .uno {
+      grid-row: 1; }
+    .ultimosJuegos .dos {
+      grid-row: 2; }
+    .ultimosJuegos .tres {
+      grid-row: 3; } }
 
 /*********************************************************/
 /**************************Videos*************************/
 /*********************************************************/
 .videosSectionn {
   margin: 50px 15% 0px 15%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  display: flex;
+  flex-direction: column;
   justify-items: center; }
-
-.video1 {
-  grid-row: 1; }
-
-.video2 {
-  grid-row: 2; }
-
-.video3 {
-  grid-row: 3; }
-
-.video4 {
-  grid-row: 4; }
-
-.video5 {
-  grid-row: 5; }
-
-.video6 {
-  grid-row: 6; }
-
-.video7 {
-  grid-row: 7; }
-
-.video8 {
-  grid-row: 8; }
 
 @media only screen and (min-width: 768px) {
   .videosSectionn {
-    margin: 50px 15% 0px 15%;
+    margin: 50px 15% 50px 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -512,8 +483,8 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   .videosSectionn {
-    border: darkorchid 2px solid;
-    background-color: #5a5a5a; } }
+    border: darkorchid 1px solid;
+    background-color: #3d3d3d; } }
 
 /*********************************************************/
 /**************************Headsets*************************/
@@ -537,7 +508,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .h1head {
     text-align: center;
-    margin: 3%; }
+    margin: 1% 0% 0% 1%; }
   .lista {
     margin: 2% 0% 0px 0%;
     display: flex;
